@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('imagenes/deportivo.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+   
+  </div>
+  
+  <div class="w3-display-topright">
+ 
+
+ <h1 class="w3-jumbo w3-animate-top">Coches deportivos</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">News</p>
+	
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+  <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"></a>
+  
+  </div>
+</div>
+ <!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href=""><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>los Mejores coches </b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="imagenes/primero.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Alpine A110</b></p>
+        <p>A110 apuesta por un cuerpo ligero (apenas 1.080 kg) acompañado de un motor que rinde 252 CV a 6.000 rpm. </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="imagenes/segundo.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>BMW Z4</b></p>
+        <p>. La cuarta generación del BMW Z4 llegará este año con una estética muy similar a la vista en su último prototipo, pero aún no conocemos detalles de su motorización. </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="imagenes/tercero.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Ferrari Portofino</b></p>
+        <p>Los descapotables de Ferrari volverán a recibir un nuevo impulso con su última joya: Ferrari Portofino. Un cabrio de techo rígido que promete emociones fuertes.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="imagenes/cuarto.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Chevrolet Corvette ZR1 Roadster</b></p>
+        <p> De todas maneras, se espera que la opción cabrio comparta las mismas prestaciones que el impresionante Chevrolet Corvette ZR1 original</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="imagenes/quinto.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Ford Mustang</b></p>
+        <p>Las últimas renovaciones del Ford Mustang han vuelto a situar al clásico estadounidense en una posición de privilegio.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="imagenes/sexto.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Toyota Supra</b></p>
+        <p>Ya hemos hablado antes del resurgimiento de los deportivos nipones de los 90. En esta ocasión le toca al Toyota Supra, al que ya hemos visto rodar por las curvas de Nürburgring. </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b> "deportivos" </b></h4>
+    <p>Un automóvil deportivo es un vehículo medio, pequeño y grande que puede ser para 2 o 4 pasajeros,
+	con 2 o 4 puertas diseñado para poder circular a altas velocidades. </p>
+    <hr>
+    
+  
